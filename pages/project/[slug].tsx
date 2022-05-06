@@ -42,11 +42,14 @@ function Project({ project }: Props) {
                         </div>
                     </div>
                     <div className="w-full p-0 md:p-4">
-                        <h2 className="text-emerald-500 text-2xl font-medium mb-5">Work Output</h2>
+                        <h2 className="text-emerald-500 text-2xl font-medium mb-0 sm:mb-5">Work Output</h2>
+                        <span className="block text-md text-gray-400 sm:hidden mb-5">(Tap to open images in new tab)</span>
                         <div className="flex flex-wrap justify-between">
                             {project[0].projOutput.map((projOutput: any) => (
                                 <div key={projOutput._key} className="w-1/2 cursor-pointer p-1 md:p-2 mb-5">
-                                    <img className="object-contain border border-gray-900 rounded-md" src={urlFor(projOutput.outputImage).url()} alt="" />
+                                    <a href={urlFor(projOutput.outputImage).url()} target="_blank">
+                                        <img className="object-contain border border-gray-900 rounded-md" src={urlFor(projOutput.outputImage).url()} alt="" />
+                                    </a>
                                 </div>
                             ))}
                         </div>
