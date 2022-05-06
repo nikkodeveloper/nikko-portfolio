@@ -60,8 +60,9 @@ const [open, setOpen] = useState(false);
             <h3 className="cursor-pointer hover:text-emerald-500 ease-in-out duration-300">About Nikko</h3>
           </Link>
         </div>
-        <button className="hidden md:inline-flex py-3 px-6 font-medium tracking-wider leading-5 text-white rounded-md border-2 border-gray-800">hello@nikkoparin.work</button>
-
+        <Link href="mailto:hello@nikkoparin.work">
+          <button className="hidden md:inline-flex py-3 px-6 font-medium tracking-wider leading-5 text-white rounded-md border-2 border-gray-800">hello@nikkoparin.work</button>
+        </Link>
         <div className="z-50 flex w-12 h-12 p-2 flex-col rounded-md border-2 border-solid border-gray-800 justify-between items-center fixed right-8 md:hidden bg-dark-blue" onClick={() => { setOpen(!open) }}>
           <span className={`h-1 w-full bg-gray-300 rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3" : ""}`} />
           <span className={`h-1 w-full bg-gray-300 rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
