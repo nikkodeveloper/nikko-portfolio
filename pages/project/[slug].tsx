@@ -36,7 +36,7 @@ function Project({ project }: Props) {
                             <h2 className="text-emerald-500 text-2xl font-medium mb-5">Tasks / Duties ( {project[0].position} )</h2>
                             <ul className="list-disc list-inside">
                             {project[0].taskDuties.map((taskDuty: any) => (
-                                <li className="text-gray-300 text-xl mb-3">{taskDuty}</li>
+                                <li key={taskDuty} className="text-gray-300 text-xl mb-3">{taskDuty}</li>
                             ))};
                             </ul>
                         </div>
