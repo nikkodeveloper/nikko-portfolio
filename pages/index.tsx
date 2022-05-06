@@ -29,7 +29,7 @@ const Home = () => {
                 
                 <div className="pt-12 flex justify-center sm:justify-end">
                   <Link href="/clients-projects">
-                    <button className="ease-in duration-300 py-4 px-12 font-medium tracking-wide text-xl text-neutral-50 bg-emerald-900 border-2 border-emerald-800 hover:bg-gray-900 hover:border-gray-800 rounded-md drop-shadow-2xl">See my work</button>
+                    <button className="animate-pulse ease-in duration-300 py-4 px-12 font-medium tracking-wide text-xl text-neutral-50 bg-emerald-900 border-2 border-emerald-800 hover:bg-gray-900 hover:border-gray-800 rounded-md drop-shadow-2xl">See my work</button>
                   </Link>
                 </div>
               </div>
