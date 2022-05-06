@@ -5,9 +5,9 @@ import Link from 'next/link';
 function MobileNav({open,setOpen} : {open:any, setOpen:any}) {
     return (
       <>
-        <div className={`z-10 py-7 top-0 right-0 left-0 transform origin-right ${open ? "absolute" : "hidden"} bg-dark-blue`}>
+        <div className={`z-10 py-2 top-0 right-0 left-0 transform origin-right ${open ? "relative" : "hidden"}`}>
             
-            <div className="flex justify-start bg-dark-blue px-10 py-4 ">
+            <div className="flex justify-start bg-gray-900 rounded-md mt-5 px-10 py-4 ">
               <Link href="/">
                 <h3 className="mr-8 text-l text-gray-300 cursor-pointer hover:text-emerald-500 ease-in-out duration-300">Home</h3>
               </Link>
