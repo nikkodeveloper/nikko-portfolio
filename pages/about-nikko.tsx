@@ -41,7 +41,7 @@ const AboutNikko = ( { aboutnikko }: Props) => {
             <h2 className="text-emerald-500 text-3xl font-medium mb-10">Services</h2>
             <div className="flex flex-wrap justify-between">
               {aboutnikko[0].services.map((service: any) => (
-                <div key={service._key} className="w-full md:w-1/2 pr-5 border-2 border-dark-blue hover:bg-zinc-900 hover:border-emerald-900 ease-in duration-300 p-10" key={service._key}>
+                <div key={service._key} className="w-full md:w-1/2 pr-5 border-2 border-dark-blue hover:bg-zinc-900 hover:border-emerald-900 ease-in duration-300 p-10">
                     <img className="aspect-square w-12 mb-5" src={urlFor(service.serviceImage).url()} alt="" />
                     <h4 className="text-gray-300 text-2xl mb-3">{service.serviceTitle}</h4>
                     <ul>
