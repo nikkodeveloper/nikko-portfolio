@@ -35,7 +35,10 @@ const ClientsProjects = ( { projects }: Props) => {
                       <img className="w-1/2 object-contain align-middle" src={urlFor(project.projCover).url()} alt="" />
                   </div>
                   <h3 className="text-2xl text-gray-300 font-bold cursor-pointer hover:text-emerald-500 ease-in-out duration-300">{project.projTitle}</h3>
-                  <p className="text-sm text-gray-600 cursor-pointer mt-1">{project.projIndustry}</p> 
+                  <h4 className="text-md text-gray-600 cursor-pointer mt-1">
+                   {project.projIndustry}
+                  </h4> 
+                  <h4 className="font-light text-sm text-emerald-700 cursor-pointer mt-5">{project.date}</h4>
                 </div>
               </Link>
 
@@ -64,6 +67,7 @@ const ClientsProjects = ( { projects }: Props) => {
       projTitle,
       projIndustry,
       projCover,
+      date,
       slug
     }`;
 
