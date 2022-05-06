@@ -47,7 +47,7 @@ function Project({ project }: Props) {
                         <div className="flex flex-wrap justify-between">
                             {project[0].projOutput.map((projOutput: any) => (
                                 <div key={projOutput._key} className="w-1/2 cursor-pointer p-1 md:p-2 mb-5">
-                                    <a href={urlFor(projOutput.outputImage).url()} target="_blank">
+                                    <a href={urlFor(projOutput.outputImage).url()} target="_blank" rel="noreferrer">
                                         <img className="object-contain border border-gray-900 rounded-md" src={urlFor(projOutput.outputImage).url()} alt="" />
                                     </a>
                                 </div>
