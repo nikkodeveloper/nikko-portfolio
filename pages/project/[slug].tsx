@@ -46,12 +46,12 @@ function Project({ project }: Props) {
                         <span className="block text-md text-gray-400 sm:hidden mb-5">(Tap to open images in new tab)</span>
                         <div className="flex flex-wrap justify-between">
                             {project[0].projOutput.map((projOutput: any) => (
-                                <div key={projOutput._key} className="w-1/2 p-1 md:p-2 mb-7">
+                                <div key={projOutput._key} className="w-full sm:w-1/2 p-1 md:p-2 mb-7">
                                     <a href={urlFor(projOutput.outputImage).url()} target="_blank" rel="noreferrer">
                                         <img className="object-contain border border-gray-900 rounded-md cursor-pointer" src={urlFor(projOutput.outputImage).url()} alt="" />
                                     </a>
                                     {projOutput.outputTitle != false && <h4 className="text-sm text-gray-300 mt-3 block">{projOutput.outputTitle}</h4>}
-                                    {projOutput.outputLink != false && <a href={projOutput.outputLink} target="_blank" rel="noreferrer" className="text-sm text-gray-300 block">{projOutput.outputLink}</a>}
+                                    {projOutput.outputLink != false && <a href={projOutput.outputLink} target="_blank" rel="noreferrer" className="text-sm text-emerald-800 block">{projOutput.outputLink}</a>}
 
                                 </div>
                             ))}
