@@ -68,6 +68,11 @@ export default {
               name: 'outputDescription',
               title: 'Description',
               type: 'blockContent',
+            },
+            {
+              name: 'outputLink',
+              title: 'Link',
+              type: 'string',
             }
           ]
         }
