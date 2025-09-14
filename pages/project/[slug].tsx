@@ -43,7 +43,6 @@ function Project({ project }: Props) {
                     </div>
                     <div className="w-full p-0 md:p-4">
                         <h2 className="text-emerald-500 text-2xl font-medium mb-0 sm:mb-5">Work Output</h2>
-                        <span className="block text-md text-gray-400 sm:hidden mb-5">(Tap to open images in new tab)</span>
                         <div className="flex flex-wrap justify-between">
                             {project[0].projOutput.map((projOutput: any) => (
                                 <div key={projOutput._key} className="w-full sm:w-1/2 p-1 md:p-2 mb-7">
