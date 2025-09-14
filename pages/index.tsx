@@ -14,7 +14,10 @@ const Home = () => {
       <div>
         <Head>
           <title>Nikko Parin - Portfolio</title>
-          <meta name="description" content="Portfolio - Next.js Learning" />
+          <meta
+            name="description"
+            content="I help brands build visibility online through creative web design, development, and digital solutions. Explore my portfolio and client projects."
+          />
           <link rel="icon" href="/nikko-parin-work-favicon.png" />
         </Head>
         <div className="w-full min-h-screen bg-dark-blue relative">
